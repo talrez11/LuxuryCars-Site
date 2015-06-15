@@ -396,11 +396,73 @@ div.copyright span a:last-of-type:hover {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	
+
 form label input {
 	width: 140px;
 	border:1px solid white;
 	border-radius: 0px;
+}
+
+div.header_article h1 {
+	display: block;
+	padding-top: 95px;
+	font-weight: 300;
+	font-size: 3.5em;
+	position: relative;
+}
+
+div.header_article h1:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -65px;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 130px 107px;
+	width: 130px;
+	height: 107px;
+}
+
+div.header_article p {
+	display: block;
+	margin-bottom: 320px;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+div.image_container {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	direction: ltr;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 450px;
+	height: 286px;
+}
+
+div.image_container img {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	-webkit-transform: scale(0.85,0.85);
+	transition: all 0.3s;
+}
+
+div.features_group article {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	width: 280px;
+	position: relative;
 }
 
 }
