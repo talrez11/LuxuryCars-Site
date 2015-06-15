@@ -5,11 +5,109 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<header>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_article"
+					template="parts/article_no_header.xml"
+					/>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+				</a>
+				<div class="form_wrap">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+
+			</header>
+
+			<div class="about">
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about_article"
+					template="parts/article.xml"
+					/>
+
+			</div>
+
+			<div class="features">
+
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="features_group"
+					template="parts/show_articles.xml"
+				/>
+
+				<cms:module
+					name="gallery"
+					action="show_group"
+					group="gallery_images"
+					template="parts/gallery_group.xml"
+					/>
+
+			</div>
+
+			<div class="video">
+					<cms:module
+						name="youtube"
+						action="show"
+						text_id="car_video"
+						template="parts/video.xml"
+						/>
+
+			</div>
+
+			<div class="clients">
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="testimonial_group"
+					template="parts/show_testimonials.xml"
+				/>
+			</div>
+
+			<footer>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_article"
+					template="parts/article_no_header.xml"
+					/>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+				</a>
+				<div class="footer_form">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+			</footer>
 		</body>
 	</html>
 </document>
