@@ -1,0 +1,31 @@
+<document>
+	<cms:desktop>
+				<a class="youtube" data-id="$params['id']"  href="'http://www.youtube.com/watch?v='.$params['video_id']" title="$params['title'][$language]" cms:eval="href,title,data-id">
+					<cms:module
+						name="youtube"
+						action="show"
+						id="$_REQUEST['id']"
+						embed="1"
+						width="640"
+						height="390"
+						player_id="video_player"
+						cms:eval="id"
+						theme="dark"
+						autohide="0"
+						autoplay="1"
+						show_related="0"
+					/>
+				</a>
+	</cms:desktop>
+
+	<cms:mobile>
+				<a
+					class="youtube mobile"
+					href="'http://www.youtube.com/watch?v='.$params['video_id']"
+					title="$params['title'][$language]"
+					cms:eval="href,title"
+					>
+				<span><cms:text constant="video_title"/></span>
+				</a>
+	</cms:mobile>
+</document>

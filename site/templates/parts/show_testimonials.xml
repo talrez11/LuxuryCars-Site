@@ -1,0 +1,17 @@
+<document>
+		<div class="$params['text_id']" cms:eval="class" >
+			<h2><cms:var param="title" multilanguage="yes"/></h2>
+			<div class="controls">
+				<a href="javascript:void(0)"></a>
+				<a href="javascript:void(0)"></a>
+				<a href="javascript:void(0)"></a>
+			</div>
+			<cms:module
+				name="articles"
+				action="show_list"
+				group="$params['id']"
+				template="parts/article2.xml"
+				cms:eval="group"
+			/>
+		</div>
+</document>

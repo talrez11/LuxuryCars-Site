@@ -1,0 +1,12 @@
+<document>
+		<div class="$params['text_id']" cms:eval="class" >
+			<h3><cms:var param="title" multilanguage="yes"/></h3>
+			<cms:module
+				name="articles"
+				action="show_list"
+				group="$params['id']"
+				template="parts/article.xml"
+				cms:eval="group"
+			/>
+		</div>
+</document>

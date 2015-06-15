@@ -1,0 +1,6 @@
+<document>
+	<article class="$params['text_id']" cms:eval="class" >
+		<cms:markdown param="content" multilanguage="yes"/>
+		<h3><cms:var param="title" multilanguage="yes"/></h3>
+	</article>
+</document>

@@ -1,0 +1,11 @@
+<document>
+	<div class="image_container">
+		<img
+			src="$params['image']"
+			alt="$params['title'][$language]"
+			cms:eval="alt,src"
+			/>
+		<span><cms:var param="title" multilanguage="yes"/></span>
+		<span><cms:var param="description" multilanguage="yes"/></span>
+	</div>
+</document>
