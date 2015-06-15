@@ -1,0 +1,146 @@
+/**
+ * Header Style Sheet
+ * LuxuryCars-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:tal Reznic
+ */
+
+header {
+	display: block;
+	text-align: center;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-image: url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 1920px 800px;
+	min-height: 800px;
+}
+
+div.header_article {
+	display: block;
+	padding-top: 20px;
+}
+
+div.header_article h1 {
+	display: block;
+	font-weight: 300;
+	font-size:3.5em;
+	position: relative;
+}
+
+div.header_article h1:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left:90%;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 130px 107px;
+	width: 130px;
+	height: 107px;
+}
+
+div.header_article p {
+	display: block;
+	margin-bottom: 430px;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+div.form_wrap {
+	display: block;
+}
+
+div.form_wrap h3 {
+	display: block;
+	padding: 15px 0px;
+	color:white;
+	font-weight: 300;
+}
+
+
+form {
+ 	display: block;
+ }
+
+form label {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+form label:before {
+	content: "";
+	position: absolute;
+	right: -17px;
+	top: 3px;
+	background-image: url(../images/form-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: -14px center;
+	background-size: 200px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+form label:nth-of-type(2):before {
+	background-position: -64px center;
+}
+
+form label:nth-of-type(3):before {
+	background-position: -114px center;
+}
+
+form label:nth-of-type(4):before {
+	background-position: -164px center;
+}
+
+form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid #1d4779;
+	border-left: 1px solid transparent;
+	width: 200px;
+	color: white;
+	transition:all 0.3s;
+}
+
+form label input:hover {
+	border:1px solid  #3397da;
+}
+
+form label input:focus {
+	border:1px solid  #3397da;
+}
+
+form label:first-of-type input:first-of-type {
+	border-radius: 0px 10px 10px 0px;
+}
+
+form div.controls {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+form div.controls button {
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background-color:#1d4779;
+	border:1px solid #1d4779;
+	font-weight: 700;
+	font-size: 1.3em;
+	color:white;
+	border-radius: 10px 0px 0px 10px;
+	width: 140px;
+	cursor: pointer;
+	transition:all 0.3s;
+}
+
+form div.controls button:hover {
+	background-color:#3397da;
+}
