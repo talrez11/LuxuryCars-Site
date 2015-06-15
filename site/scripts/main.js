@@ -48,9 +48,37 @@ Site.is_mobile = function() {
 /**
  * Function called when document and images have been completely loaded.
  */
-Site.on_load = function() {
-};
 
+Site.on_load = function() {
+	testimonial = new PageControl('div.testimonial_group', 'article')
+	testimonial.attachControls($('div.testimonial_group div.controls a'))
+	.setInterval(5000)
+	.setWrapAround(true)
+	.setPauseOnHover(true);
+
+	$('div.video a').click(function(event) {
+	        event.preventDefault();
+	        var link = $(this);
+	        var base = $('base').attr('href');
+	        var data = {
+	                        'section': 'video',
+	                        'id': link.data('id')
+	                };
+
+	        $.ajax({
+	                url: base,
+	                data: data,
+	                dataType: 'html',
+	                headers: {
+	                        'X-Requested-With': 'Script'
+	                },
+	                success: function(data) {
+	                        link.parent().html(data);
+	                }
+	        });
+	});
+
+}
 
 // connect document `load` event with handler function
 $(Site.on_load);
