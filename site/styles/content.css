@@ -395,3 +395,13 @@ div.copyright span a:last-of-type:hover {
 	color:#5bc2d8;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	
+form label input {
+	width: 140px;
+	border:1px solid white;
+	border-radius: 0px;
+}
+
+}
+
