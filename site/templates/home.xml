@@ -107,6 +107,10 @@
 						text_id="contact_form"
 						/>
 				</div>
+
+				<div class="copyright">
+					<span><cms:text constant="copyright"/></span>
+				</div>
 			</footer>
 		</body>
 	</html>
