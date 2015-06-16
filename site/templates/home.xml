@@ -83,6 +83,7 @@
 					template="parts/show_testimonials.xml"
 				/>
 			</div>
+<!-- DESKTOP FOOTER SECTION -->
 		<cms:desktop>
 			<footer>
 				<cms:module
