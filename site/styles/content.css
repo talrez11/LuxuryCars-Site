@@ -438,7 +438,7 @@ form label input {
 
 div.header_article h1 {
 	display: block;
-	padding-top: 95px;
+	padding-top: 80px;
 	font-weight: 300;
 	font-size: 3.5em;
 	position: relative;
@@ -447,7 +447,7 @@ div.header_article h1 {
 div.header_article h1:before {
 	content: "";
 	position: absolute;
-	top: 0px;
+	top: -15px;
 	left: 50%;
 	margin-left: -65px;
 	background-image: url(../images/logo.svg);
