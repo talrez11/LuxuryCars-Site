@@ -214,7 +214,40 @@ div.video a {
 	background-size:640px 390px;
 	width: 640px;
 	height: 390px;
+	position:relative;
 }
+
+div.video a:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	background-image:url(../images/youtube1.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	transition:all 0.3s;
+
+}
+
+div.video a:hover:before {
+	opacity: 1;
+}
+
+div.video a:active:before {
+	opacity: 0;
+}
+
+div.video a:visited:before {
+	opacity: 0;
+}
+
+
 
 
 /*Testimonial Section*/
