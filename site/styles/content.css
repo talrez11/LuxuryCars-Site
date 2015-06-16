@@ -179,19 +179,7 @@ div.image_container img{
 	transition:all 0.3s;
 }
 
-div.image_container span:first-of-type {
-	display: inline-block;
-	vertical-align: top;
-	padding-right: 10px;
-	font-size: 1.8em;
-}
 
-div.image_container span:last-of-type {
-	display: inline-block;
-	vertical-align: top;
-	color:#94a4a5;
-	font-size: 1.8em;
-}
 
 /*Video Section*/
 
