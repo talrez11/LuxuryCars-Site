@@ -426,6 +426,11 @@ form label input {
 	border-radius: 0px;
 }
 
+form div.controls button {
+	width: 160px;
+	border:1px solid white;
+}
+
 div.header_article h1 {
 	display: block;
 	padding-top: 80px;
