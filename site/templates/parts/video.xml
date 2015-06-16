@@ -25,7 +25,6 @@
 					title="$params['title'][$language]"
 					cms:eval="href,title"
 					>
-				<span><cms:text constant="video_title"/></span>
 				</a>
 	</cms:mobile>
 </document>
