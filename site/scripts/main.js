@@ -56,6 +56,7 @@ Site.on_load = function() {
 	.setWrapAround(true)
 	.setPauseOnHover(true);
 
+	if(!Site.is_mobile()){
 	$('div.video a.youtube').click(function(event) {
 	        event.preventDefault();
 	        var link = $(this);
@@ -76,7 +77,8 @@ Site.on_load = function() {
 	                        link.parent().html(data);
 	                }
 	        });
-	});
+		});
+	}
 
 }
 
