@@ -56,7 +56,7 @@ Site.on_load = function() {
 	.setWrapAround(true)
 	.setPauseOnHover(true);
 
-	$('div.video a').click(function(event) {
+	$('div.video a.youtube').click(function(event) {
 	        event.preventDefault();
 	        var link = $(this);
 	        var base = $('base').attr('href');
