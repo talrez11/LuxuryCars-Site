@@ -221,38 +221,6 @@ div.video a {
 	position:relative;
 }
 
-div.video a:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	margin-top: -50px;
-	left: 50%;
-	margin-left: -50px;
-	background-image:url(../images/youtube1.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100px 100px;
-	width: 100px;
-	height: 100px;
-	opacity: 0.5;
-	transition:all 0.3s;
-
-}
-
-div.video a:hover:before {
-	opacity: 1;
-}
-
-div.video a:active:before {
-	opacity: 0;
-}
-
-div.video a:visited:before {
-	opacity: 0;
-}
-
-
-
 
 /*Testimonial Section*/
 
@@ -424,7 +392,7 @@ div.copyright span a:first-of-type:hover {
 }
 
 div.copyright span a:last-of-type {
-	color:#449bb5;
+	color:#fbc926;
 	transition:all 0.3s;
 }
 
@@ -443,6 +411,16 @@ form label input {
 form div.controls button {
 	width: 160px;
 	border:1px solid white;
+}
+
+header {
+  display: block;
+  text-align: center;
+  padding: 0px calc((100vw - 1200px) / 2);
+  background-image: url(../images/ipad-header-background-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 div.header_article h1 {
@@ -472,6 +450,16 @@ div.header_article p {
 	margin-bottom: 320px;
 	font-size: 3em;
 	font-weight: 900;
+}
+
+div.about {
+  display: block;
+  text-align: center;
+  padding: 0px calc((100vw - 1200px) / 2);
+  background-image: url(../images/ipad-discover-background-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size:100% auto;
 }
 
 div.image_container {
