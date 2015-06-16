@@ -83,7 +83,7 @@
 					template="parts/show_testimonials.xml"
 				/>
 			</div>
-
+		<cms:desktop>
 			<footer>
 				<cms:module
 					name="articles"
@@ -112,6 +112,40 @@
 					<span><cms:text constant="copyright"/></span>
 				</div>
 			</footer>
+		</cms:desktop>
+<!-- MOBILE FOOTER SECTION -->
+		<cms:mobile>
+			<footer>
+				<div class="footer_wrap">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="header_article"
+						template="parts/article_no_header.xml"
+						/>
+				</div>
+
+				<div class="footer_form">
+					<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="number"/>
+					</a>
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+
+				<div class="copyright">
+					<span><cms:text constant="copyright"/></span>
+				</div>
+			</footer>
+		</cms:mobile>
 		</body>
 	</html>
 </document>
